@@ -1,6 +1,7 @@
 package ie.gmit.sw;
 
 import java.io.*;
+import java.util.Arrays;
 import java.util.Map;
 import java.util.concurrent.*;
 
@@ -11,9 +12,23 @@ public class FileParser {
 			String next= null;
 			
 			while((next=br.readLine())!=null){
-					// ADD EACH LINE TO THE PARSE
-					String [] stuff = next.split(" ");
-					//temp.put(stuff[0],stuff[1]);
+				// ADD EACH LINE TO THE PARSE
+				String [] stuff = next.split(" ");
+				
+				//Making array of string
+				String arrString = Arrays.toString(stuff);
+				
+				//Making string 4 letters
+				String a = arrString.substring(1, 5); 
+				
+				//Everything what is left are numbers
+				String b = arrString.substring(6, arrString.length()-1);
+				
+				//Converting String into Double value
+				double d = Double.parseDouble(b); 
+				
+				//Putting values into the ConcurrentHashMap
+				temp.put(a,d);
 			}
 			return temp;
 	}

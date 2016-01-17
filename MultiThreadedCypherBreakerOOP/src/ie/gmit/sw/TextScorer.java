@@ -7,9 +7,7 @@ import java.util.concurrent.*;
 public class TextScorer {
 	private Map<String, Double> map = new ConcurrentHashMap<String, Double>();
 	
-	//put into its own class
-	/*
-	}*/
+	
 	
 	public TextScorer(Map<String, Double> m){
 		this.map = m;
