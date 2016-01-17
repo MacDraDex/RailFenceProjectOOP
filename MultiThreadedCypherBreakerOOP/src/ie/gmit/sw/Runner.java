@@ -38,7 +38,7 @@ public class Runner {
 			input.nextLine();
 			
 			/*
-			 * All text must be uppercase .toUpperCase();
+			 * All text must be uppercase .toUpperCase();, user input cannot contain any spaces
 			 * case1: takes input from user
 			 * case2: Exit, if quit equals true then leave do-while
 			 */
@@ -54,7 +54,7 @@ public class Runner {
 					
 					CypherBreaker cb = new CypherBreaker(encryption, textScorer);
 					
-					System.out.println("hit enter to continue...");
+					System.out.println("hit enter to display menu once again...");
 					input.nextLine();
 					break;
 				case 2:

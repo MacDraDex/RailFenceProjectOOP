@@ -12,7 +12,7 @@ public class CypherBreaker {
 	
 	
 	private TextScorer textScorer;
-	private Resultable result = new Result("", 0, -500.00);
+	private Resultable result = new Result("", 0, -300.00);
 	
 	
 	private static Object poisonPill = new Object();
@@ -37,7 +37,7 @@ public class CypherBreaker {
 						//do something here
 						
 						if(count == cypherText.length()/2) {
-							r = new PoisonPill("", 0, -500.00);
+							r = new PoisonPill("", 0, -300.00);
 							queue.put(r);
 							System.out.println("Added poison");
 						}
