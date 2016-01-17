@@ -4,6 +4,22 @@ import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.io.*;
 
+/*For some reason I'm unable to upload a README file and JPG picture of UMLDiagram which displays a relationship between classes. I tried to upload from different folders and I even tried to upload those files
+ * to the new repositories but still didn't help 
+ * here is a link to URL Diagram : http://i63.tinypic.com/v6ro20.jpg // http://oi63.tinypic.com/v6ro20.jpg
+ * 
+ * README:
+ * 
+ * Student: Maciej Drabik
+ * G00277045
+ * Software Dev Year 3
+ * Instructions:
+
+	*Download this ZIP from Github and Import to workspace. In project folder there is a railfence.jar file that will allow you to compile a program using CMD.
+	*Navigate to directory where this folder is and type this command java -cp ./railfence.jar ie.gmit.sw.Runner.
+	*Small menu will show up and you will be asked to input a text that you want to encrypt. I didn't manage to implement a method to compare which score is a closest one.
+ */
+
 //main class Runner
 public class Runner {
 	
